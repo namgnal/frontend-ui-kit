@@ -1,0 +1,9 @@
+/* Explicit adapter for the bundled component recipes. Map product layout separately. */
+.fui-live { --fui-live-font-size: initial; --fui-live-spacing: initial; }
+.fui-live .fui-message-body, .fui-live .fui-composer textarea { font-size: var(--fui-live-font-size, 16px); }
+.fui-live .fui-message { padding-block: var(--fui-live-spacing, 16px); }
+.fui-live .fui-composer, .fui-live .fui-file-main { padding: var(--fui-live-spacing, 12px); }
+/* Inline custom properties must not override the user's OS motion preference. */
+@media (prefers-reduced-motion: reduce) {
+  .fui-live { --fui-motion-fast: 0ms !important; --fui-motion-settle: 0ms !important; }
+}

@@ -1,0 +1,246 @@
+{
+  "date": "2026-11-07",
+  "version": "0.2.0",
+  "environment": "Windows / Node.js 24.12.0 / Playwright 1.58.2 / installed Chromium",
+  "passed": 47,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "cases": [
+    {
+      "name": "button does not submit a surrounding form",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "radio keys wrap, skip disabled, maintain one tab stop and respect RTL",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "attachment open and remove are keyboard reachable and independent",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "native disclosure supports keyboard and removes collapsed descendants from tab order",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "IME composition and keyCode 229 do not send; Shift+Enter adds newline",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "failed send keeps draft and a successful retry clears it",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "pending send is deduplicated and does not erase a newer draft",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "failed outgoing message remains recoverable alongside a newer draft",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "copy reports pending and rejection accurately, and keeps whitespace",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "real clipboard writes demo code with Windows newline normalization",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "stream follows bottom, preserves reading position, then jumps back",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "reduced motion disables busy spin and control transitions",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "workbench filter and landing CTA are functional",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "chat 1360px light: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "chat 1360px dark: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "chat 360px light: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "chat 360px dark: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "dashboard 1360px light: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "dashboard 1360px dark: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "dashboard 360px light: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "dashboard 360px dark: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "landing 1360px light: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "landing 1360px dark: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "landing 360px light: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "landing 360px dark: layout, focus, accessibility, console, screenshot",
+      "file": "components.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "apply exported parameters to a real file, build final view, and retain design without panel/storage",
+      "file": "final-config.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "plain HTML reference opens offline with local CSS and native disclosure",
+      "file": "static.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "normal entry neither loads controls nor reads/writes their stored settings",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "panel starts closed; keyboard close restores focus and preserves a product draft",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "all controls update preview, compare original and recover without interpreting title as HTML",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "explicit save survives reload and reset removes only this project settings",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "export and import preserve multiple values, project and baseline",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "invalid, foreign and stale imports leave current preview unchanged",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "blocked browser storage keeps edits usable and export still works",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "corrupted saved data is not applied and reduced motion overrides inline tuning",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 1360px light jade: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 1360px light ink: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 1360px light plum: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 1360px dark jade: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 1360px dark ink: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 1360px dark plum: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 360px light jade: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 360px light ink: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 360px light plum: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 360px dark jade: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 360px dark ink: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    },
+    {
+      "name": "optional panel 360px dark plum: accessible, no page overflow",
+      "file": "tweaks.spec.mjs",
+      "status": "expected"
+    }
+  ]
+}

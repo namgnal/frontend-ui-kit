@@ -1,0 +1,7 @@
+{
+  "kind": "frontend-ui-kit/design-config",
+  "version": 1,
+  "projectId": "frontend-ui-kit-demo",
+  "revision": 0,
+  "values": { "accent": "inherit", "fontSize": null, "spacing": null, "radius": null, "motion": null, "title": null }
+}

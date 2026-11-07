@@ -1,0 +1,30 @@
+{
+  "name": "frontend-ui-kit-workbench",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:tokens": "node skills/frontend-ui-kit/scripts/check-tokens.mjs",
+    "test": "playwright test",
+    "test:tokens": "node --test tests/token-check.test.mjs",
+    "test:config": "node --test tests/config.test.mjs"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7",
+    "@playwright/test": "1.58.2",
+    "@axe-core/playwright": "4.11.1",
+    "esbuild": "0.25.12",
+    "typescript": "5.9.3"
+  },
+  "description": "Interaction-focused UI skill, React recipes, runnable demos and browser checks",
+  "license": "(MIT AND Apache-2.0)",
+  "author": "namgnal"
+}

@@ -1,0 +1,22 @@
+/* Load only in an optional development entry. All controls use their own namespace. */
+.fuit-workbench { color: #243a33; background: #f5f7f7; font: 14px/1.6 'Segoe UI','Microsoft YaHei',sans-serif; }
+.fuit-workbench * { box-sizing: border-box; }
+.fuit-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 24px; background: #fff; border-bottom: 1px solid #cbd7d3; }
+.fuit-toolbar p { margin: 0; }.fuit-toolbar small { color: #526661; }
+.fuit-toolbar button, .fuit-panel button, .fuit-file { min-height: 44px; padding: 9px 14px; border: 1px solid #b9cbc3; border-radius: 9px; background: #fff; color: #243a33; cursor: pointer; font: inherit; }
+.fuit-toolbar button { background: #166653; color: #fff; border-color: #166653; }
+.fuit-workbench > .fuit-layout { display: grid; grid-template-columns: minmax(0,1fr); align-items: start; }
+.fuit-workbench[data-panel-open='true'] > .fuit-layout { grid-template-columns: minmax(0,1fr) 344px; }
+.fuit-preview { min-width: 0; }
+.fuit-panel { color-scheme: light; position: sticky; top: 0; max-height: 100dvh; overflow: auto; padding: 24px; background: #fff; border-inline-start: 1px solid #cbd7d3; }
+.fuit-panel header { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.fuit-kicker { font-size: 11px; color: #526661; letter-spacing: .1em; }.fuit-panel h2 { font-size: 20px; margin: 5px 0 0; font-weight: 600; }.fuit-panel header button { min-width: 44px; font-size: 22px; padding: 4px; }
+.fuit-note { color: #526661; font-size: 12px; line-height: 1.8; }.fuit-field { display: block; padding: 16px 0; border-top: 1px solid #dbe4df; font-size: 13px; }.fuit-control-heading { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 5px; }.fuit-panel output { color: #526661; font-variant-numeric: tabular-nums; }
+.fuit-panel input[type='text'], .fuit-panel select { width: 100%; min-height: 44px; padding: 8px 10px; margin-top: 8px; border: 1px solid #a9beb3; border-radius: 7px; color: #243a33; background: #fff; font: inherit; }.fuit-panel input[type='range'] { display: block; margin: 0; width: 100%; height: 44px; accent-color: #166653; }
+.fuit-panel button.fuit-subtle { padding: 6px 0; border: 0; background: transparent; font-size: 12px; text-decoration: underline; }.fuit-panel button:disabled { opacity: .5; cursor: default; }
+.fuit-actions { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 12px; border-top: 1px solid #dbe4df; }.fuit-actions button[aria-pressed='true'] { background: #e0efe9; border-color: #166653; }.fuit-save { display: grid; gap: 10px; padding-block: 12px; font-size: 12px; }.fuit-save button { background: #166653; color: #fff; border-color: #166653; }.fuit-file { position: relative; overflow: hidden; display: inline-flex; align-items: center; }.fuit-file input { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; }
+.fuit-toolbar :is(button,a):focus-visible, .fuit-panel :is(button,input,select):focus-visible { outline: 2px solid #166653; outline-offset: 3px; }.fuit-file:focus-within { outline: 2px solid #166653; outline-offset: 3px; }.fuit-notice { font-size: 12px; color: #254e3f; overflow-wrap: anywhere; min-height: 2em; }
+@media (max-width: 1050px) {
+  .fuit-workbench[data-panel-open='true'] > .fuit-layout { grid-template-columns: minmax(0,1fr); }
+  .fuit-panel { grid-row: 1; position: static; max-height: none; border-inline-start: 0; border-bottom: 1px solid #cbd7d3; }
+}

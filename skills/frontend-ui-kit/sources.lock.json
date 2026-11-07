@@ -1,0 +1,31 @@
+{
+  "name": "frontend-ui-kit",
+  "version": "0.2.0",
+  "scope": "Batch 1 preserved; opt-in development-only design controls, validated presets, and explicit application to a dedicated design configuration",
+  "maintainedAt": "2026-10-24",
+  "sources": [
+    {
+      "repository": "https://github.com/Caho1/open-claude-ui",
+      "commit": "c1f923ae0051a871941b98a0e2e3183a545e6a85",
+      "license": "MIT",
+      "sourcePaths": ["code-examples/CdsButton.tsx", "code-examples/SegmentedControl.tsx", "code-examples/AttachmentCard.tsx", "code-examples/StatusIndicators.tsx", "code-examples/CodeBlock.tsx", "code-examples/ChatMessageBubbles.tsx", "code-examples/ChatComposer.tsx", "code-examples/ThinkingAccordion.tsx", "code-examples/useClaudeScrollPinning.ts", "code-examples/useClaudeRovingFocus.ts", "code-examples/cds-theme.css"],
+      "destination": ["assets/react/", "assets/themes/"],
+      "mode": "Substantial rewrite of component patterns; newly authored semantic palette",
+      "changes": ["Keyboard and native semantics", "Await clipboard outcome", "IME protection and async drafts", "No provider branding", "Scoped styles and reduced motion", "No desktop or framework styling runtime"]
+    },
+    {
+      "repository": "https://github.com/imsai-sh/open-claude-design",
+      "commit": "19b48b1096f97c96cc21f58b1af9c411da65b46f",
+      "license": "Apache-2.0",
+      "sourcePaths": ["apps/web/src/skills/built-in/frontend-design/SKILL.md", "apps/web/src/skills/built-in/interactive-prototype/SKILL.md", "apps/web/src/skills/built-in/wireframe/SKILL.md", "apps/web/src/skills/built-in/save-as-standalone-html/SKILL.md", "apps/web/src/skills/built-in/make-tweakable/SKILL.md"],
+      "destination": ["references/prototype-flow.md", "references/verification.md", "references/optional-tweaks.md"],
+      "mode": "Adapted design/preview/verification workflow; no application runtime copied",
+      "changes": ["Host-independent tools", "Existing project first", "Truthful export and verification scope", "No universal source rewriting", "Optional narrow controls with stable defaults; newly authored runtime instead of EDITMODE, host proxies, or iframe bridge"]
+    }
+  ],
+  "runtimeDependencies": { "react": ">=18", "react-dom": ">=18" },
+  "testedDependencies": { "react": "18.3.1", "react-dom": "18.3.1", "typescript": "5.9.3" },
+  "originalModules": ["assets/tweaks/", "scripts/apply-tweaks.mjs"],
+  "optionalModuleDependencies": { "react": ">=18 for controls only", "node": ">=18 for apply-tweaks.mjs only", "additionalPackages": [] },
+  "excluded": ["Electron", "Model/API key management", "Cloudflare", "Generic visual source rewriting", "Generic iframe runtime", "Third-party brands/fonts", "Existing locally installed frontend-design skill integration"]
+}

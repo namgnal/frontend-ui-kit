@@ -1,0 +1,63 @@
+/* Original semantic palette; structure informed by open-claude-ui. Scoped, optional, no reset. */
+.fui-root {
+  color-scheme: light;
+  --fui-bg: #f5f7f7;
+  --fui-surface: #ffffff;
+  --fui-surface-soft: #edf2f1;
+  --fui-text: #1f3430;
+  --fui-muted: #526661;
+  --fui-border: #cbd7d3;
+  --fui-accent: #166653;
+  --fui-on-accent: #ffffff;
+  --fui-accent-soft: #e0efe9;
+  --fui-focus: #15775e;
+  --fui-error: #a52a37;
+  --fui-success: #166653;
+  --fui-shadow: 0 4px 18px #213d3010;
+  --fui-radius-control: 10px;
+  --fui-radius-panel: 18px;
+  --fui-font: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --fui-font-mono: Consolas, 'SFMono-Regular', monospace;
+  --fui-space-1: 4px;
+  --fui-space-2: 8px;
+  --fui-space-3: 12px;
+  --fui-space-4: 16px;
+  --fui-space-6: 24px;
+  --fui-motion-fast: 140ms;
+  --fui-motion-settle: 220ms;
+  --fui-ease: cubic-bezier(.2, .8, .2, 1);
+  color: var(--fui-text);
+  font-family: var(--fui-font);
+  line-height: 1.6;
+}
+.fui-root[data-fui-theme='dark'] {
+  color-scheme: dark;
+  --fui-bg: #131c1a;
+  --fui-surface: #1d2a26;
+  --fui-surface-soft: #263831;
+  --fui-text: #e7f2ec;
+  --fui-muted: #abc0b5;
+  --fui-border: #496156;
+  --fui-accent: #94dfc2;
+  --fui-on-accent: #12382c;
+  --fui-accent-soft: #29493b;
+  --fui-focus: #99edcc;
+  --fui-error: #ffabb2;
+  --fui-success: #94dfc2;
+  --fui-shadow: 0 4px 18px #00000024;
+}
+/* A second neutral direction for denser tools. Adopt only when the product calls for it. */
+.fui-root[data-fui-palette='ink'] {
+  --fui-accent: #344c8c;
+  --fui-accent-soft: #e8edf8;
+  --fui-focus: #3459af;
+}
+.fui-root[data-fui-palette='ink'][data-fui-theme='dark'] {
+  --fui-accent: #b2c6ff;
+  --fui-accent-soft: #303c5b;
+  --fui-on-accent: #1e2d53;
+  --fui-focus: #c1d1ff;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fui-root { --fui-motion-fast: 0ms; --fui-motion-settle: 0ms; }
+}

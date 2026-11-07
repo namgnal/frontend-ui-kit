@@ -1,0 +1,8 @@
+/* Product-specific bindings live here, away from the generic panel. */
+.fui-live .hero-copy > p { font-size: var(--fui-live-font-size, 16px); }
+.fui-live .task-row h3 { font-size: var(--fui-live-font-size, 16px); }
+.fui-live .landing-features p { font-size: var(--fui-live-font-size, 13px); }
+.fui-live .task-row { padding-block: var(--fui-live-spacing, 22px); }
+.fui-live .landing-features { gap: var(--fui-live-spacing, 40px); }
+.fui-live .chat-bottom { gap: var(--fui-live-spacing, 12px); }
+@media (max-width: 640px) { .fui-live .landing-features { gap: var(--fui-live-spacing, 22px); } }
